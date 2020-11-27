@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/243946635.svg)](https://zenodo.org/badge/latestdoi/243946635)
 
-# sauradip.github.io
+# senhe.github.io
 
 A [website](https://sauradip.github.io/) for my research and professional activities. I am maintaining it regularly as of now.  
 
