@@ -306,9 +306,9 @@
               <font size="3">Sen He</font>
             </strong>,
             <font size="3">Wentong Liao</font>,
-            <font size="3">Hamed R. Tavakoli</font>
-            <font size="3">Michael Yang</font>
-            <font size="3">Bodo Rosenhahn</font>
+            <font size="3">Hamed R. Tavakoli</font>,
+            <font size="3">Michael Yang</font>,
+            <font size="3">Bodo Rosenhahn</font>,
             <font size="3">Nicolas Pugeault</font>
             <br>
             <em>Asian Conference on Computer Vision (ACCV)</em>, 2020
@@ -319,17 +319,76 @@
           <p></p>
           <a href="https://github.com/wtliao/ImageTransformer" target="_blank">
             <font size="3">Code</font>
-          </a> 
-          <a href="javascript:void(0);" onclick="myFunction('accv_bib')">
+          </a> /
+          <a href="javascript:void(0);" onclick="myFunction('accv2020_bib')">
             <font size="3">BibTex</font>
           </a>
-          <div id="accv_bib" style="font-family:Courier;display:none;min-width:350px;">
+          <div id="accv2020_bib" style="font-family:Courier;display:none;min-width:350px;">
             <font size="2">
               <br>
               @inproceedings{he2020image,<br>
               title={Image Captioning through Image Transformer},<br>
               author={He, Sen and Liao, Wentong and Tavakoli, Hamed R and Yang, Michael and Rosenhahn, Bodo and Pugeault, Nicolas},<br>
               booktitle={ACCV},<br>
+              year={2020}<br>
+              }<br>
+            </font>
+          </div>
+        </td>
+      </tr>
+
+
+
+      <!-- BMVC 2020 Image Captioning- -->
+      <tr onmouseout="bmvc_stop()" onmouseover="bmvc_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='bmvc_image'><img src='images/bmvc_2020_spherical.png'></div>
+            <img src='images/bmvc_2020_spherical_1.png'>
+          </div>
+          <script type="text/javascript">
+            function bmvc_start() {
+              document.getElementById('bmvc_image').style.opacity = "1";
+            }
+
+            function bmvc_stop() {
+              document.getElementById('bmvc_image').style.opacity = "0";
+            }
+            icip_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://www.bmvc2020-conference.com/assets/papers/0053.pdf" target="_blank">
+            <papertitle>
+              <font size="3">A Spherical Approach to Planar Semantic Segmentation
+              </font>
+            </papertitle>
+          </a>
+          <br>
+          <p></p>
+          <font size="3">
+            <font size="3">Chao Zhang</font>
+            <strong>,
+              <font size="3">Sen He</font>,
+            </strong>
+            <font size="3">Stephan Liwicki</font>
+            <br>
+            <em>British Machine Vision Conference (BMVC)</em>, 2020
+            <br>
+            <em> UK </em>
+          </font>
+          <br>
+          <p></p>
+          <a href="javascript:void(0);" onclick="myFunction('bmvc2020_bib')">
+            <font size="3">BibTex</font>
+          </a>
+          <div id="bmvc2020_bib" style="font-family:Courier;display:none;min-width:350px;">
+            <font size="2">
+              <br>
+              @inproceedings{he2020image,<br>
+              title={A Spherical Approach to Planar Semantic Segmentation},<br>
+              author={Chao Zhang and Sen, He and Stephan Liwichi},<br>
+              booktitle={BMVC},<br>
               year={2020}<br>
               }<br>
             </font>
