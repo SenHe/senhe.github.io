@@ -2,6 +2,6 @@
 
 # senhe.github.io
 
-A [website](https://sauradip.github.io/) for my research and professional activities. I am maintaining it regularly as of now.  
+A [website](https://senhe.github.io/) for my research and professional activities. I am maintaining it regularly as of now.  
 
 If you happen to like my template feel free to use it and dont forget to give template credit to [Jon Barron](https://jonbarron.info/) ( and probably me ;) )
