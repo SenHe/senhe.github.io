@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>NeRV</title>
+    <title>layout2im</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,7 @@
     <div class="container" id="main">
         <div class="row">
             <h1 class="col-md-12 text-center">
-                Context-Aware Layout to Image Generation </br> with </br> Enhanced Object Appearance </br>
+                <strong>Context-Aware Layout to Image Generation </br> with </br> Enhanced Object Appearance</strong> </br>
                 <small>
                     CVPR 2021
                 </small>
@@ -141,7 +141,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Abstract
+                    <strong>Abstract</strong>
                 </h3>
                 <p class="text-justify">
                     A layout to image (L2I) generation model aims to generate a complicated image containing multiple objects (things) against natural background (stuff), conditioned on a given layout. Built upon the recent advances in generative adversarial networks (GANs), existing L2I models have made great progress. However, a close inspection of their generated images reveals two major limitations: (1) the object-to-object as well as object-to-stuff relations are often broken and (2) each object's appearance is typically distorted lacking the key defining characteristics associated with the object class. We argue that these are caused by the lack of context-aware object and stuff feature encoding in their generators, and location-sensitive appearance representation in their discriminators. To address these limitations, two new modules are proposed in this work. First, a context-aware feature transformation module is introduced in the generator to ensure that the generated feature encoding of either object or stuff is aware of other co-existing objects/stuff in the scene. Second, instead of feeding location-insensitive image features to the discriminator, we use the Gram matrix computed from the feature maps of the generated object images to preserve location-sensitive information, resulting in much enhanced object appearance. Extensive experiments show that the proposed method achieves state-of-the-art performance on the COCO-Thing-Stuff and Visual Genome benchmarks.
@@ -162,7 +162,7 @@
                 <h3>
                     Results
                 </h3>
-                <image src="quan_result.png" class="img-responsive" alt="overview"><br>
+                <image src="qan_result.png" class="img-responsive" alt="overview"><br>
                 <image src="qual_result.png" class="img-responsive" alt="overview"><br>
             </div>
         </div>
