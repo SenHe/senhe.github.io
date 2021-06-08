@@ -143,13 +143,19 @@
                 <h3>
                     Abstract
                 </h3>
-                <image src="hotdog.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
                     A layout to image (L2I) generation model aims to generate a complicated image containing multiple objects (things) against natural background (stuff), conditioned on a given layout. Built upon the recent advances in generative adversarial networks (GANs), existing L2I models have made great progress. However, a close inspection of their generated images reveals two major limitations: (1) the object-to-object as well as object-to-stuff relations are often broken and (2) each object's appearance is typically distorted lacking the key defining characteristics associated with the object class. We argue that these are caused by the lack of context-aware object and stuff feature encoding in their generators, and location-sensitive appearance representation in their discriminators. To address these limitations, two new modules are proposed in this work. First, a context-aware feature transformation module is introduced in the generator to ensure that the generated feature encoding of either object or stuff is aware of other co-existing objects/stuff in the scene. Second, instead of feeding location-insensitive image features to the discriminator, we use the Gram matrix computed from the feature maps of the generated object images to preserve location-sensitive information, resulting in much enhanced object appearance. Extensive experiments show that the proposed method achieves state-of-the-art performance on the COCO-Thing-Stuff and Visual Genome benchmarks.
                 </p>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Architecture
+                </h3>
+                <image src="archi.png" class="img-responsive" alt="overview"><br>
+            </div>
+        </div>
 
 <!--         <div class="row" id="header_img">
             <figure class="col-md-8 col-md-offset-2">
@@ -182,10 +188,10 @@
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
 @inproceedings{he2021l2m,
-  title={Context-Aware Layout to Image Generation with Enhanced Object Appearance},
-  author={Sen He, Wentong Liao, Michael Ying Yang, Yongxin Yang, Yi-Zhe Song, Bodo Rosenhahn, Tao Xiang},
-  booktitle={CVPR},
-  year={2021}}
+               title={Context-Aware Layout to Image Generation with Enhanced Object Appearance},
+               author={Sen He, Wentong Liao, Michael Ying Yang, Yongxin Yang, Yi-Zhe Song, Bodo Rosenhahn, Tao Xiang},
+               booktitle={CVPR},
+               year={2021}}
 </textarea>
                 </div>
             </div>
