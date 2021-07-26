@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>layout2im</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <link rel="icon" type="image/png" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110862391-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110862391-3');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                <strong>Context-Aware Layout to Image Generation </br> with </br> Enhanced Object Appearance</strong> </br>
+                <small>
+                    <strong>CVPR 2021</strong>
+                </small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://senhe.github.io/">
+                          Sen He
+                        </a>
+                        </br>University of Surrey
+                    </li>
+                    <li>
+                        <a href="https://www.tnt.uni-hannover.de/en/staff/liao/">
+                          Wentong Liao
+                        </a>
+                        </br>Leibniz Universität Hannover
+                    </li>
+                    <li>
+                        <a href="https://sites.google.com/site/michaelyingyang/">
+                          Michael Yang
+                        </a>
+                        </br> University of Twente
+                    </li>
+                    <li>
+                        <a href="https://yang.ac/">
+                          Yongxin Yang
+                        </a>
+                        </br>University of Surrey
+                    </li>
+                    </br>
+                    <li>
+                        <a href="http://personal.ee.surrey.ac.uk/Personal/Y.Song/">
+                            Yi-Zhe Song
+                        </a>
+                        </br>University of Surrey
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=qq3TxtcAAAAJ&hl=zh-CN">
+                          Bodo Rosenhahn
+                        </a>
+                        </br>Leibniz Universität Hannover
+                    </li>
+                    <li>
+                        <a href="http://personal.ee.surrey.ac.uk/Personal/T.Xiang/index.html">
+                          Tao Xiang
+                        </a>
+                        </br>University of Surrey
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/pdf/2103.11897.pdf">
+                            <image src="paper.png" height="120px"><br>
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02063_poster.pdf">
+                            <image src="icon-poster-3.jpg.png" height="120px"><br>
+                                <h4><strong>Poster</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cvpr_2021_layout2im_5min.pptx">
+                            <image src="slide_icon.png" height="120px"><br>
+                                <h4><strong>Slides</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/wtliao/layout2img">
+                            <image src="github_pad.png" height="120px"><br>
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+<!--         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Links
+                </h3>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Abstract</strong>
+                </h3>
+                <p class="text-justify">
+                    A layout to image (L2I) generation model aims to generate a complicated image containing multiple objects (things) against natural background (stuff), conditioned on a given layout. Built upon the recent advances in generative adversarial networks (GANs), existing L2I models have made great progress. However, a close inspection of their generated images reveals two major limitations: (1) the object-to-object as well as object-to-stuff relations are often broken and (2) each object's appearance is typically distorted lacking the key defining characteristics associated with the object class. We argue that these are caused by the lack of context-aware object and stuff feature encoding in their generators, and location-sensitive appearance representation in their discriminators. To address these limitations, two new modules are proposed in this work. First, a context-aware feature transformation module is introduced in the generator to ensure that the generated feature encoding of either object or stuff is aware of other co-existing objects/stuff in the scene. Second, instead of feeding location-insensitive image features to the discriminator, we use the Gram matrix computed from the feature maps of the generated object images to preserve location-sensitive information, resulting in much enhanced object appearance. Extensive experiments show that the proposed method achieves state-of-the-art performance on the COCO-Thing-Stuff and Visual Genome benchmarks.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Architecture</strong>
+                </h3>
+                <image src="archi.png" class="img-responsive" alt="overview"><br>
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Results</strong>
+                </h3>
+                <image src="qan_result.png" class="img-responsive" alt="overview"><br>
+                <image src="qual_result.png" class="img-responsive" alt="overview"><br>
+            </div>
+        </div>
+
+<!--         <div class="row" id="header_img">
+            <figure class="col-md-8 col-md-offset-2">
+                <image src="img/llff_teaser.png" class="img-responsive" alt="overview">
+                <figcaption>
+                </figcaption>
+            </figure>
+
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>5-Minute Video</strong>
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+<!--                         <iframe align="center" width="100%" height="422" src="https://www.youtube.com/embed/LY6MgDUzS3M" frameborder="0" allowfullscreen></iframe> -->
+                        <iframe src="https://www.youtube.com/embed/uklX03ns0m0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    BibTeX
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@inproceedings{he2021l2m,
+title={Context-Aware Layout to Image Generation with Enhanced Object Appearance},
+author={Sen He, Wentong Liao, Michael Ying Yang, Yongxin Yang, Yi-Zhe Song, Bodo Rosenhahn, Tao Xiang},
+booktitle={CVPR},
+year={2021}}
+</textarea>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
