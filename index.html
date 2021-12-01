@@ -175,11 +175,11 @@
           </div>
           <script type="text/javascript">
             function aaai_22_hgnn_start() {
-              document.getElementById('aaai_22_hgnn_image').style.opacity = "1";
+              document.getElementById('aaai_22_hgnn_image').style.opacity = "0";
             }
 
-            function aaai_22_dlfs_stop() {
-              document.getElementById('aaai_22_hgnn_image').style.opacity = "0";
+            function aaai_22_hgnn_stop() {
+              document.getElementById('aaai_22_hgnn_image').style.opacity = "1";
             }
             aaai_22_hgnn_stop()
           </script>
@@ -224,68 +224,6 @@
         </td>
       </tr>
 
-      <!-- ICCV 2021 few shot semantic segmentation- -->
-      <tr onmouseout="iccv_21_fss_stop()" onmouseover="iccv_21_fss_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='iccv_21_fss_image'><img src='images/iccv_2021_fss.png'></div>
-            <img src='images/iccv_2021_fss_1.png'>
-          </div>
-          <script type="text/javascript">
-            function iccv_21_fss_start() {
-              document.getElementById('iccv_21_fss_image').style.opacity = "1";
-            }
-
-            function iccv_21_fss_stop() {
-              document.getElementById('iccv_21_fss_image').style.opacity = "0";
-            }
-            iccv_21_fss_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2108.03032.pdf" target="_blank">
-            <papertitle>
-              <font size="3">Simpler is Better: Few-shot Semantic Segmentation with Classifier Weight Transformer
-              </font>
-            </papertitle>
-          </a>
-          <br>
-          <p></p>
-          <font size="3">
-            <font size="3">Zhihe Lu</font>,
-            <strong>
-              <font size="3">Sen He</font>
-            </strong>,
-            <font size="3">Xiatian Zhu</font>,
-            <font size="3">Li Zhang</font>,
-            <font size="3">Yi-Zhe Song</font>,
-            <font size="3">Tao Xiang</font>
-            <br>
-            <em>International Conference on Computer Vision (ICCV)</em>, 2021
-            <br>
-            <em> Virtual </em>
-          </font>
-          <br>
-          <p></p>
-          <a href="https://github.com/zhiheLu/CWT-for-FSS" target="_blank">
-            <font size="3">Code</font>
-          </a> /
-          <a href="javascript:void(0);" onclick="myFunction('iccv2021_fss_bib')">
-            <font size="3">BibTex</font>
-          </a>
-          <div id="iccv2021_fss_bib" style="font-family:Courier;display:none;min-width:350px;">
-            <font size="2">
-              <br>
-              @inproceedings{Luiccv2021fss,<br>
-              title={Simpler is Better: Few-shot Semantic Segmentation with Classifier WeightTransformer},<br>
-              author={Zhihe Lu and Sen He and Xiatian Zhu and Li Zhang and Yi-Zhe, Song and Tao, Xiang},<br>
-              booktitle={ICCV},<br>
-              year={2021}<br>
-              }<br>
-            </font>
-          </div>
-        </td>
-      </tr>
       
       <!-- BMVC 2021 Text Based Person Search- -->
       <tr onmouseout="bmvc_21_tbps_stop()" onmouseover="bmvc_21_tbps_start()">
